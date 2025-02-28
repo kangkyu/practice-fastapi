@@ -11,3 +11,11 @@ fastapi dev main.py # ^C to quit
 
 deactivate
 ```
+
+```sh
+source .venv/bin/activate
+fastapi dev main.py
+
+curl -H "Content-Type: application/json" localhost:8000/?name=Steve
+# {"message":"Hello, Steve!"}
+```
